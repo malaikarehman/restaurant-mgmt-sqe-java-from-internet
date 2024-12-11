@@ -2,10 +2,10 @@ name: SonarQube Scan
 on:
   push:
     branches:
-      - main  # or your default branch
+      - master  
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
