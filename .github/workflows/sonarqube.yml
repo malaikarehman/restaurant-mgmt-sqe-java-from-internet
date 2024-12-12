@@ -24,11 +24,11 @@ jobs:
           path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@master
-        with:
-          args: >
-            -Dsonar.projectKey=malaikarehman_restaurant-mgmt-sqe-java-from-internet
-            -Dsonar.organization=malaikarehman
-            -Dsonar.host.url=https://sonarcloud.io
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+      # - name: SonarQube Scan
+      #   uses: SonarSource/sonarqube-scan-action@master
+      #   with:
+      #     args: >
+      #       -Dsonar.projectKey=malaikarehman_restaurant-mgmt-sqe-java-from-internet
+      #       -Dsonar.organization=malaikarehman
+      #       -Dsonar.host.url=https://sonarcloud.io
+      #       -Dsonar.login=${{ secrets.SONAR_TOKEN }}
